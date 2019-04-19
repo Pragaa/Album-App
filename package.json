@@ -1,0 +1,16 @@
+{
+  "name": "spotify-app",
+  "version": "1.0.0",
+  "description": "Spotify App Integration to search albums",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app"
+  },
+  "author": "Goncalo Fonseca",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}

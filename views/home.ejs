@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Spotify App</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+ 
+    <% include partials/navbar %>
+
+    <section id="album-section">
+      <div class="album-options">
+        <h4>My Collection</h4>
+        <p>Sort By:</p>
+        <div class="album-options-sort" onclick="changeSortParameter('added')">added</div>
+        <div class="album-options-sort" onclick="changeSortParameter('name')">name</div>
+        <div class="album-options-sort" onclick="changeSortParameter('date')">date</div>
+      </div>
+      <div class="album-track">
+        <div class="album-track-image"></div>
+        <div class="album-track-fill"><p></p></div>
+      </div>
+      <ul class="album-list"></ul>
+    </section>
+
+    <% include partials/footer %>
+  <script src="/js/main.js"></script>
+</body>
+</html>
