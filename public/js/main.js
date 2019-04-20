@@ -63,7 +63,7 @@ albumSearchForm.addEventListener('submit', (e) => {
                                         '<h5>' +name+ ' </h5>' +                                                         
                                         '<p>' +artist+ '</p>' +
                                         '<p> Nº of tracks: ' +tracks+ '</p>' +
-                                        '<p> Released ⏺ </p>' +                                                                      
+                                        '<p> Released </p>' +                                                                      
                                         '<p>' +date+ '</p>' +                                                                      
                                       '</div>' +
                                       '<div class="search-album-add">' +
