@@ -13,7 +13,12 @@ let sortParameter = "added";
 window.onload = () => {
   //loads albums on window load
   fetchAlbums();
-  document.onclick = (e) => {
+  //adds touch and click events
+  document.addEventListener('touchstart', closeSearch, {passive: true})
+  document.addEventListener('click', closeSearch, {passive: true})
+
+  //closes the search bar if clicked outside its element
+  function closeSearch(e) {
     let parentSection = e.target.closest("section")
     //check if the closest section is not null or the search menu
     if (parentSection !== null && parentSection.id !== 'search-menu') {

@@ -503,14 +503,18 @@
   ##Screen = B/w 1025px to 1280px */
   @media (min-width: 1025px) { 
 
-section {
-  max-width: 1400px;
-  margin: auto;
-}
+
+
+   /* max-width: 1400px;
+    margin: auto;*/
 
 /***************/
 /* Search-menu */
 /***************/
+#search-menu {
+  max-width: 1400px;
+  margin: auto;
+}
 #search-results {
   height: 160px;
 }
@@ -545,6 +549,8 @@ section {
 /* Album-Section */
 /********************************************************/
 #album-section {
+  max-width: 1400px;
+  margin: auto;
   margin-top: 40px;
 }
 .album-options h4 {
