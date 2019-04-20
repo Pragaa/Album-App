@@ -1,6 +1,7 @@
 const albumSearchForm = document.querySelector('form');
 const searchElement = document.querySelector('input');
 const searchResults = document.querySelector('#search-results')
+const searchMessage = document.querySelector('.search-alert')
 const albumList = document.querySelector('#album-section ul');
 const albumSort = document.getElementsByClassName('album-options-sort');
 const albumTrackImage = document.querySelector('.album-track-image')
@@ -128,19 +129,25 @@ function addAlbum(id) {
         spotifyAlbum.push(album);
         localStorage.setItem('spotify-albums', JSON.stringify(spotifyAlbum))
 
-        console.log('album added')
-
+        addMessage('album added')
         fetchAlbums();
       } else {
-        
-        console.log('album already exists')
-        
+        addMessage('album already exists')
       }
     }
     })
   })
 }
 
+//displays the message after addalbum is requested
+function addMessage(message) {
+  searchMessage.querySelector('p').innerHTML = `${message}`
+  searchMessage.style.display = 'block'
+
+  setTimeout(()=> {
+    searchMessage.style.display = 'none'
+  }, 3000)
+}
 
 
 
@@ -292,6 +299,8 @@ function deleteAlbum(id) {
   //re-load the albums in the collection
   fetchAlbums();
 }
+
+
 
 
 function changeSortParameter(type) {
