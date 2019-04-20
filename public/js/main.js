@@ -215,7 +215,7 @@ function fetchAlbums() {
                                   '<div class="item-image" style="background-image: url(' +image+ ')"></div> ' +
                                   '<div class="item-info">' +
                                     '<p>' +name+ '</p>'+
-                                    '<p> Album ⏺ by ' +artist+ '</p>'+
+                                    '<p> Album by ' +artist+ '</p>'+
                                     '<p> Nº of Songs: ' +numberSongs+'</p>'+
                                     '<p> Popularity: ' +popularity+'</p>'+
                                     '<p> Album Duration: ' +albumDuration.toFixed(0)+'m</p>'+
@@ -257,7 +257,7 @@ function fetchAlbums() {
 //this function loops through the albums list and closes all except the one clicked
 function showTracks(item, list, album) { 
 
-  albumTrackImage.style.background = `url(${album.image})` 
+  albumTrackImage.style = `background: url(${album.image}); background-size: cover;` 
   
   for (let j = 0; j < list.length; j++) {  
     let itemTrack = list[j].querySelector('.list-item-tracks')

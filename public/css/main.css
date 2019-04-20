@@ -398,7 +398,7 @@
       flex-basis: 100%;
 }
 .album-options p {
-  font-size: 18px;
+  font-size: 14px;
   padding-top: 27px;
   padding-right: 1px;
   font-weight: bold;
@@ -407,7 +407,7 @@
   font-size: 40px;
 }
 .album-options-sort { 
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -421,10 +421,10 @@
   background: var(--secondary-color);
 }
 .album-track-image {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   margin: 35px auto;
-  border-radius: 80px;
+  border-radius: 25px;
   background: grey;
   background-size: cover;
 }
@@ -503,58 +503,56 @@
   ##Screen = B/w 1025px to 1280px */
   @media (min-width: 1025px) { 
 
-
-
-   /* max-width: 1400px;
-    margin: auto;*/
-
 /***************/
 /* Search-menu */
 /***************/
 #search-menu {
-  max-width: 1400px;
+  max-width: 1000px;
   margin: auto;
 }
 #search-results {
-  height: 160px;
+  height: 115px;
 }
 .search-album {
   margin: 7px 0 7px 10px;
-  height: 140px;
+  height: 100px;
 }
 .search-album-image {
   cursor: pointer;
-  height: 140px;
-  width: 140px;
+  height: 100px;
+  width: 100px;
 }
 .search-album-info {
-  width: 125px;
+  width: 85px;
   margin-right: 3px;
 }
 .search-album-info h5 {
-  font-size: 12px;
+  font-size: 10px;
+  height: 25px;
+  overflow: hidden;
 }
 .search-album-info p {
-  font-size: 12px;
+  font-size: 9px;
 }
 .search-album-add {
-  width: 128px;
-  margin-right: 0px; 
+  width: 85px;
+  height: 100px;
+  margin-right: 3px;
 }
 .search-album-add a {
-  margin: 50px auto;
+  margin: 35px auto;
 }
 
 /*****************/
 /* Album-Section */
 /********************************************************/
 #album-section {
-  max-width: 1400px;
+  max-width: 1000px;
   margin: auto;
   margin-top: 40px;
 }
 .album-options h4 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 
@@ -567,18 +565,18 @@
           justify-content: unset;
 }
 .album-list-item {
-  height: 130px;
-  -ms-flex-preferred-size: 49.5%;
-      flex-basis: 49.5%;
-  margin-left: 4px;
+  height: 120px;
+  -ms-flex-preferred-size: 49%;
+  flex-basis: 49%;
+  margin-left: .5%;
   margin-bottom: 5px;
   cursor: pointer;
 }
 .item-info p {
-  font-size: 12px;
+  font-size: 10px;
 }
 .list-item-info p:nth-child(1) {
-  font-size: 18px;
+  font-size: 16px;
 }
 .list-item-info .item-image{
   width: 120px;
@@ -590,7 +588,7 @@
       flex-basis: 25%;
 }
 .list-item-tracks {
-  top: 314px;
+  top: 281px;
   width: 24%;
 }
 .list-item-tracks p {
