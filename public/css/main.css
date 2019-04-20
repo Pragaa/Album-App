@@ -140,6 +140,10 @@
   background: white;
 }
 .search-album-info h5 {
+  width: 100%;
+  height: 18px;
+  line-height: 12px;
+  overflow: hidden;
   padding: 3px;
   font-size: 9px;
   font-weight: 600;
@@ -294,8 +298,12 @@
   background-size: cover;
 }
 .list-item-info p:nth-child(1) {
+  overflow: hidden;
+  width: 100%;
+  height: 20px;
+  line-height: 15px;
   padding: 3px 0px;
-  font-size: 3vw;
+  font-size: 3.2vw;
   color: black;
 }
 .list-item-info p:nth-child(3) {
@@ -304,11 +312,17 @@
 .list-item-info p:nth-child(6) {
   position: absolute;
   bottom: 4px;
+  font-size: 7px;
 }
 .list-item-info p:nth-child(7) {
   position: absolute;
-  bottom: 2px;
+  bottom: 5px;
   right: 10px;
+  width: 100px;
+  overflow: hidden;
+  height: 12px;
+  line-height: 14px;
+  text-align: end;
 }
 .list-item-info a {
   position: absolute;
@@ -483,6 +497,9 @@
 .list-item-info p:nth-child(1) {
   font-size: 11px;
 }
+.list-item-info p:nth-child(7) {
+  font-size: 0px;
+}
 
 
 .list-item-tracks {
@@ -590,15 +607,25 @@
   margin-bottom: 5px;
   cursor: pointer;
 }
+.list-item-info .item-image{
+  width: 120px;
+}
 .item-info p {
   font-size: 10px;
 }
 .list-item-info p:nth-child(1) {
   font-size: 16px;
+  height: 28px;
+  line-height: 24px;
 }
-.list-item-info .item-image{
-  width: 120px;
+.list-item-info p:nth-child(6) {
+  font-size: 10px;
 }
+.list-item-info p:nth-child(7) {
+  font-size: 10px;
+}
+
+
 
 /**/
 .album-track {
